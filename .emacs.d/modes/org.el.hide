@@ -1,0 +1,34 @@
+;; Managing arrow keys with org-replace-disputed-keys
+;;
+;; Non-nil means use alternative key bindings for some keys.
+;; Org-mode uses S-<cursor> keys for changing timestamps and priorities.
+;; These keys are also used by other packages like `CUA-mode' or `windmove.el'.
+;; If you want to use Org-mode together with one of these other modes,
+;; or more generally if you would like to move some Org-mode commands to
+;; other keys, set this variable and configure the keys with the variable
+;; `org-disputed-keys'.
+;;
+;; Default remapping:
+;;   S-UP      ->  M-p             S-DOWN     ->  M-n
+;;   S-LEFT    ->  M--             S-RIGHT    ->  M-+
+;;   C-S-LEFT  ->  M-S--           C-S-RIGHT  ->  M-S-+
+(setq org-replace-disputed-keys t)
+
+(setq org-directory "~/org")
+(setq org-agenda-files (list org-directory))
+(setq diary-file "~/diary")
+(setq org-default-notes-file (concat org-directory "/work.org"))
+(setq org-agenda-include-diary t)
+(setq org-odd-levels-only t)
+(setq org-hide-leading-stars t)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(org-remember-insinuate)
+(global-set-key (kbd "C-c r") 'org-remember)
+(add-hook 'org-mode-hook
+	  (lambda ()
+	    (progn
+	      (auto-fill-mode 1))))
+
+;; Settings for mobile-org using dropbox
+(setq org-mobile-inbox-for-pull (concat org-directory "/from-mobile.org"))
+(setq org-mobile-directory "~/Dropbox/MobileOrg")

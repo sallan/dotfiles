@@ -1,0 +1,17 @@
+(line-number-mode 1)
+(column-number-mode 1)
+(display-time)
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+
+(if (eq system-type 'windows-nt)
+  (set-default-font "-outline-Consolas-normal-r-normal-normal-14-97-96-96-c-*-iso8859-1"))
+(if (eq window-system 'x)
+  (set-default-font "Liberation Mono"))
+
+(require 'color-theme)
+(load-library "themes/color-theme-library")
+(load-library "themes/color-theme-solarized")
+;;(color-theme-solarized-light)
+;;(color-theme-solarized-dark)

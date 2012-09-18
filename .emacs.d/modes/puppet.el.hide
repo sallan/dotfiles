@@ -1,0 +1,4 @@
+(add-hook 'puppet-mode-hook
+	  (lambda ()
+	    (progn
+	      (auto-fill-mode 1))))

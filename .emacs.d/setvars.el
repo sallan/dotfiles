@@ -1,0 +1,31 @@
+(setq custom-file "~/.emacs.d/custom.el")
+(setq inhibit-startup-message t)
+(setq make-backup-files nil)
+(setq visible-bell t)
+(setq font-lock-maximum-decoration t)
+(setq display-time-day-and-date t)
+(setq dabbrev-case-replace nil)
+(setq dired-recursive-deletes (quote top))
+(setq scroll-conservatively 1)
+(setq scroll-step 1)
+(setq transient-mark-mode t)
+(setq indent-tabs-mode nil)
+(setq archive-zip-use-pkzip nil)
+
+
+(setq auto-mode-alist 
+      (append '(("\\.xml$" . xml-lite-mode)
+		("\\.mak$" . makefile-mode)
+		("\\.def$" . makefile-mode)
+		("\\.def.inc$" . makefile-mode)
+		("\\.rb$"  . ruby-mode)
+		("rakefile" . ruby-mode)
+                ("\\.pl$"  . cperl-mode)
+                ("\\.pm$"  . cperl-mode)
+                ("\\.t$"   . cperl-mode)
+                ("\\.cpp$" . c++-mode)
+		("\\.py$"  . python-mode)
+		("\\.pod$" . pod-mode)
+		("\\.bat$" . bat-mode)) auto-mode-alist))
+
+
