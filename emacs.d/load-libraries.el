@@ -13,6 +13,10 @@
 ;; loaded we can customize them with hooks.
 (require 'xml-lite nil t)
 (require 'p4 nil t)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/magit-1.2.0")
+(autoload 'magit-status "magit" nil t)
+
 ;;(require 'python-mode nil t)
 ;;(require 'w3m-load nil t)
 
