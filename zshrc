@@ -15,6 +15,7 @@ compinit
 # End of lines added by compinstall
 
 export PS1='[%n@%m]%~%# '
+export P4CONFIG=p4.config
 
 # Put aliases here for now
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
