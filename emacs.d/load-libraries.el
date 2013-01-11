@@ -12,7 +12,7 @@
 ;; TODO: Maybe these need to be in there own file so if they get
 ;; loaded we can customize them with hooks.
 (require 'xml-lite nil t)
-(require 'p4 nil t)
+;(require 'p4 nil t)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/magit-1.2.0")
 (autoload 'magit-status "magit" nil t)
