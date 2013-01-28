@@ -19,8 +19,8 @@
 (global-set-key "\C-cd" 'comment-line-and-duplicate)
 (global-set-key [(f5)] 'speedbar-get-focus)
 (global-set-key "\C-cd" 'comment-line-and-duplicate)
-;;(global-set-key (kbd "<f11>")   'delete-other-windows)
-;;(global-set-key (kbd "<f12>")   'stevea-split-buffer)
+(global-set-key (kbd "C-c 1")   'delete-other-windows)
+(global-set-key (kbd "C-c 2")   'stevea-split-buffer)
 
 ;; I sometimes accidentally type C-x f instead of C-x C-f
 ;; which calls the annoying set-fill-column function. Unbind
