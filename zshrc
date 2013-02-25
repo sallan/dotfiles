@@ -17,5 +17,7 @@ compinit
 export PS1='[%n@%m]%~%# '
 export P4CONFIG=p4.config
 
-# Put aliases here for now
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+# Source aliases file
+if [ -f ~/.aliases ]; then
+	. ~/.aliases
+fi
