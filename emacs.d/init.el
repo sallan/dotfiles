@@ -15,3 +15,5 @@
 (load custom-file 'noerror)
 ;; (server-start)
 ;; (eshell)
+
+(setenv "P4EDITOR" "emacsclient")

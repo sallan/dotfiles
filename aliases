@@ -1,0 +1,7 @@
+alias screen='screen -D -RR'
+alias h=history
+alias c=clear
+alias ll='ls -l'
+alias lsd='ls -F | grep / | pr -6at'
+alias p4e="p4 diff -se | p4 -x - edit"
+alias e="emacs -nw  -q"

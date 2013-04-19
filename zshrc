@@ -16,6 +16,7 @@ compinit
 
 export PS1='[%n@%m]%~%# '
 export P4CONFIG=p4.config
+export P4EDITOR='emacs -nw -q'
 
 # Source aliases file
 if [ -f ~/.aliases ]; then
