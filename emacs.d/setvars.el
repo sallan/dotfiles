@@ -11,7 +11,7 @@
 (setq transient-mark-mode t)
 (setq indent-tabs-mode nil)
 (setq archive-zip-use-pkzip nil)
-
+(setq large-file-warning-threshold nil)
 
 (setq auto-mode-alist 
       (append '(("\\.xml$" . xml-lite-mode)
