@@ -1,3 +1,6 @@
+(line-number-mode 1)
+(column-number-mode 1)
+(display-time)
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "C-c %")   'replace-string)
 (global-set-key (kbd "C-c s")   'shell)
