@@ -16,7 +16,11 @@ compinit
 
 export PS1='[%n@%m]%~%# '
 export P4CONFIG=p4.config
-export P4EDITOR='emacs -nw -q'
+#export P4EDITOR='subl --wait'
+#export P4EDITOR=emacs
+export P4EDITOR='vim +0 "+/<enter\|^>>>>\|^====\|^<<<<\|^\t" +nohlsearch +"set noexpandtab"'
+
+export PATH=$PATH:~/bin
 
 # Source aliases file
 if [ -f ~/.aliases ]; then
