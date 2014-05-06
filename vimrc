@@ -53,8 +53,9 @@ iab putm  use Test::More qw( no_plan );
 iab papp  :r ~/.code_templates/perl_application.pl
 iab pmod  :r ~/.code_templates/perl_module.pm
 
-"set background=dark
-set background=light
+" set background=dark
+" set background=light
+colorscheme solarized
 
 "perl key mappings
 map <Leader>t  :%! perltidy<CR>
@@ -90,3 +91,5 @@ let g:netrw_liststyle=3 "Use tree-mode as default view
 let g:netrw_browse_split=4 "Open file in previous buffer
 let g:netrw_preview=1 "Preview window in vertical split
 
+" Use %% to get path of current buffer
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%' 
