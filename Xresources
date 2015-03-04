@@ -1,0 +1,27 @@
+!==========================================================================
+! URxvt
+!==========================================================================
+URxvt*foreground: cyan
+URxvt*background: black
+URxvt*geometry: 150x50
+
+URxvt*font: -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso8859-16
+URxvt*boldFont: -xos4-terminus-bold-r-normal--20-200-72-72-c-100-iso8859-16
+
+! Use these bigger fonts if your eyes are tired
+! URxvt*font: -xos4-terminus-medium-r-normal--22-220-72-72-c-110-iso8859-16
+! These settings came from here:
+! 
+! http://www.askapache.com/linux/rxvt-xresources.html
+
+! For tmux
+URxvt*termName:  screen-256color
+
+!==========================================================================
+! Emacs
+!==========================================================================
+Emacs24.geometry: 140x45+100+10
+Emacs24.foreground: lightgray
+Emacs24.background: black
+Emacs24.verticalScrollBars: off
+Emacs24.font: -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso8859-16
