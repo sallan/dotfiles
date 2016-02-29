@@ -4,7 +4,7 @@
 "#  See: http://www.oreilly.com/pub/a/oreilly/ask_tim/2001/codepolicy.html  #
 "############################################################################
 "Load pathogen which manages add-on modules
-execute pathogen#infect()
+"execute pathogen#infect()
 
 set nocompatible                  "Use Vim settings, not vi
 set nobackup                      "No pesky ~ files
@@ -53,9 +53,28 @@ iab putm  use Test::More qw( no_plan );
 iab papp  :r ~/.code_templates/perl_application.pl
 iab pmod  :r ~/.code_templates/perl_module.pm
 
+if has("gui_running")
+    colorscheme murphy
+    :set columns=120            " Set columns.
+    :set lines=40               " Set lines.
+    :set mousehide              " Hide mouse when typing.
+    :set noantialias            " Disable anti-aliasing.
+
+    if has("win32")
+        :set guifont=Lucida_Console:h10:cANSI
+    elseif has("mac")
+        ":set nomacatsui           " Disable weird vim 7.x font drawing on OS/X.
+        :set guifont=Lucida\ Sans\ Typewriter\ Regular:h18
+    else
+        :set guifont=Ubuntu\ Mono\ 12
+    endif
+else
+    colorscheme default
+endif
+
 " set background=dark
 " set background=light
-colorscheme solarized
+" colorscheme desert
 
 "perl key mappings
 map <Leader>t  :%! perltidy<CR>
