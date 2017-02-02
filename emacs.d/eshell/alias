@@ -1,0 +1,3 @@
+alias tube python tableau-tools/pipeline/tube.py $*
+alias vim eshell/vi $1
+alias ff find-file $1
