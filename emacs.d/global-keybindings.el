@@ -29,3 +29,7 @@
 ;; which calls the annoying set-fill-column function. Unbind
 ;; it.
 (global-unset-key (kbd "C-x f"))
+
+;; Remap right option key on Mac to ctr
+(if (eq system-type 'darwin)
+    (setq ns-right-alternate-modifier 'control))
