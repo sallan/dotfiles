@@ -33,3 +33,7 @@
 ;; Remap right option key on Mac to ctr
 (if (eq system-type 'darwin)
     (setq ns-right-alternate-modifier 'control))
+
+;; Remap right command key on Mac to Alt - no more accidently exiting emacs!!
+(if (eq system-type 'darwin)
+    (setq ns-right-command-modifier 'meta))
