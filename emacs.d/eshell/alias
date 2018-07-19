@@ -1,7 +1,28 @@
+alias cdo cd d:/Org
+alias ppaus p4 -p p4-aus-proxy-002:1667 -c sallan-p4aus $*
+alias pp21 p4 -p dvp4edgepl021:1667 -c sallan-dvp4edgepl021 $*
+alias pp20 p4 -p dvp4edgepl020:1667 -c sallan-dvp4edgepl020 $*
+alias pp19 p4 -p dvp4edgepl019:1667 -c sallan-dvp4edgepl019 $*
+alias pp18 p4 -p dvp4edgepl018:1667 -c sallan-dvp4edgepl018 $*
+alias pp17 p4 -p dvp4edgepl017:1667 -c sallan-dvp4edgepl017 $*
+alias pp16 p4 -p dvp4edgepl016:1667 -c sallan-dvp4edgepl016 $*
+alias pp15 p4 -p dvp4edgepl015:1667 -c sallan-dvp4edgepl015 $*
+alias pp14 p4 -p dvp4edgepl014:1667 -c sallan-dvp4edgepl014 $*
+alias pp13 p4 -p dvp4edgepl013:1667 -c sallan-dvp4edgepl013 $*
+alias pp12 p4 -p dvp4edgepl012:1667 -c sallan-dvp4edgepl012 $*
+alias pp11 p4 -p dvp4edgepl011:1667 -c sallan-dvp4edgepl011 $*
+alias pp10 p4 -p dvp4edgepl010:1667 -c sallan-dvp4edgepl010 $*
+alias pp9 p4 -p dvp4edgepl009:1667 -c sallan-dvp4edgepl009 $*
+alias pp8 p4 -p dvp4edgepl008:1667 -c sallan-dvp4edgepl008 $*
+alias pp7 p4 -p dvp4edgepl007:1667 -c sallan-dvp4edgepl007 $*
+alias pp6 p4 -p dvp4edgepl006:1667 -c sallan-dvp4edgepl006 $*
+alias pp5 p4 -p dvp4edgepl005:1667 -c sallan-dvp4edgepl005 $*
+alias pp4 p4 -p dvp4edgepl004:1667 -c sallan-dvp4edgepl004 $*
+alias pp3 p4 -p dvp4edgepl003:1667 -c sallan-dvp4edgepl003 $*
 alias tcproof python tableau-tools/pipeline/tcproof.py $*
 alias tube python tableau-tools/pipeline/tube.py $*
 alias pipe python tableau-tools/pipeline/piperunner.py --definition $* run
-alias vim eshell/vi $1
 alias ff find-file $1
 alias f find-file-other-window $1
 alias d dired $1
+alias cdp4 cd d:/perforce-admin
